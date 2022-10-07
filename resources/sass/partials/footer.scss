@@ -1,0 +1,73 @@
+@import '/resources/sass/_vars';
+
+.footer_top{
+    background-color: $primary-color;
+    padding: 2rem 0;
+
+    .widgets_list{
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+
+        .widget_item{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: white;
+            font-weight: 200;
+            text-transform: uppercase;
+        }
+    }
+
+
+    figure{
+        width: fit-content;
+        img{
+            height: 40px;
+            object-fit: contain;
+        }
+    }
+}
+
+.content_footer{
+    background-image: url('../../../public/img/footer-bg.jpg');
+    padding: 2rem 0;
+    overflow: hidden;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .grid_links{
+            color: white;
+            display: flex;
+            align-content: flex-start;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 1rem 4rem;
+            max-height: 200px;
+            max-width: 400px;
+            padding: 1.5rem 0rem;
+            
+            .link_list{
+                text-transform: uppercase;
+                width: fit-content;
+                
+                li {
+                    font-size: 0.7rem;
+                    opacity: 0.7;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        
+        .logo_big {
+            img {
+                
+                margin: -100px 0;
+                height: 400px;
+                width: 400px;
+                object-fit: contain;
+            }
+        }
+    }
+}

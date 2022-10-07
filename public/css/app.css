@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Antonio:wght@200;400;700&display=swap);
 
+
 * {
   margin: 0;
   padding: 0;
@@ -53,7 +54,7 @@ main {
   padding: 1rem;
 }
 
-.container figure {
+.container figure.logo {
   height: 70px;
   aspect-ratio: 1;
 }
@@ -89,11 +90,159 @@ main {
   background-color: #0c7cec;
 }
 
+.footer_top {
+  background-color: #0c7cec;
+  padding: 2rem 0;
+}
+
+.footer_top .widgets_list {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.footer_top .widgets_list .widget_item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.footer_top figure {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.footer_top figure img {
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.content_footer {
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.content_footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content_footer .container .grid_links {
+  color: white;
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem 4rem;
+  max-height: 200px;
+  max-width: 400px;
+  padding: 1.5rem 0rem;
+}
+
+.content_footer .container .grid_links .link_list {
+  text-transform: uppercase;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.content_footer .container .grid_links .link_list li {
+  font-size: 0.7rem;
+  opacity: 0.7;
+  text-transform: capitalize;
+}
+
+.content_footer .container .logo_big img {
+  margin: -100px 0;
+  height: 400px;
+  width: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 figure.jumbo img {
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+
+.comics-gird-section .main_btn {
+  margin-bottom: 2rem;
+  transform: translateY(-50%);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.comics-gird-section .comics_grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 25px 5px;
+}
+
+.comics-gird-section .comics_grid figure {
+  position: relative;
+  overflow: hidden;
+}
+
+.comics-gird-section .comics_grid figure .show_price {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+}
+
+.comics-gird-section .comics_grid figure .show_price button {
+  position: absolute;
+  bottom: 20px;
+  background-color: #0c7cec;
+  color: whitesmoke;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border: transparent;
+  cursor: pointer;
+  transform: translateY(300%);
+}
+
+.comics-gird-section .comics_grid figure .show_price span {
+  transform: translateY(350%);
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.comics-gird-section .comics_grid figure .show_price span:hover {
+  color: #0c7cec;
+  text-decoration: underline;
+}
+
+.comics-gird-section .comics_grid figure .show_price span:hover button {
+  transform: translateY(0);
+}
+
+.comics-gird-section .comics_grid figure .show_price:hover {
+  opacity: 1;
+}
+
+.comics-gird-section .comics_grid figure .show_price:hover span {
+  transform: translateY(0);
+}
+
+.comics-gird-section .comics_grid h4 {
+  color: whitesmoke;
+  font-weight: 200;
+  padding-top: 0.5rem;
 }
 
