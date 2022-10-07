@@ -5,8 +5,6 @@
 
 @section('content')
     
-    <h4>
-        home content goes here
-    </h4>
+    @include('partials.jumbo')
 
 @endsection

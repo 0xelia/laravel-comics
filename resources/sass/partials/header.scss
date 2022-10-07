@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    figure{
+        height: 70px;
+        aspect-ratio: 1;
+    }
+
+    .nav{
+        display: flex;
+        gap: 1rem;
+        height: 70px;
+
+        .nav_link{
+            text-transform: uppercase;
+            padding: 1rem 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+        &.active{
+            position: relative;
+            color: $primary-color;
+        }
+        &.active::after{
+            content: '';
+            display: block;
+            position: absolute;
+            height: 4px;
+            bottom: -1rem ;
+            left: 0px;
+            right: 0px;
+            background-color: $primary-color;
+        }
+        }
+    }
+}
