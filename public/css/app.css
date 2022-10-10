@@ -1,7 +1,6 @@
-@import url(https://fonts.googleapis.com/css2?family=Antonio:wght@200;400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Antonio:wght@200;
 
-
-* {
+400;700&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -127,11 +126,6 @@ main {
   overflow: hidden;
 }
 
-.content_footer .container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .content_footer .container .grid_links {
   color: white;
   display: flex;
@@ -244,5 +238,14 @@ figure.jumbo img {
   color: whitesmoke;
   font-weight: 200;
   padding-top: 0.5rem;
+}
+
+.comic_details .comic_container {
+  max-width: 1024px !important;
+  margin: 0 auto;
+}
+
+.comic_details .comic_container .thumb {
+  width: 200px;
 }
 

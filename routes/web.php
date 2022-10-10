@@ -18,4 +18,23 @@ Route::get('/', function () {
         'products' => config('comics')
     ];
     return view('comics', $data);
-});
+})->name('comics');
+
+
+
+
+Route::get('/comics/{id}', function($id){
+    
+    $comics = config('comics');
+
+    $data = [
+        'comic' => $comic = $comics[$id]
+    ];
+
+    if($id < count($comics)){
+        return view('comics.show', $data);
+    } else{
+        return abort(404);
+    }
+
+})->name('comic_details');
