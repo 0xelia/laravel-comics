@@ -6,6 +6,6 @@
 @section('content')
     
     @include('partials.jumbo')
-    @include('partials.comics-grid')
+    @include('comics.index')
 
 @endsection
